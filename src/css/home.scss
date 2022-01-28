@@ -1,0 +1,115 @@
+.home{
+  background: linear-gradient(55.95deg, #FF3F3A20 0%, #F75E0520 100%);
+  padding: 200px 0 80px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image{
+    width: 50%;
+    img{
+      width: 100%;
+    }
+  }
+  &__info{
+    width: 50%;
+    padding-top: 12px;
+  }
+  &__play{
+    display: flex;
+    align-items: center;
+    &-circle{
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: #FF3F3A12;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #FF3F3A;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+      }
+      &::after{
+        content: '►';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-50%);
+        color: white;
+        font-size: 25px;
+
+      }
+    }
+    &-text{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 150%;
+      color: #1E212C;
+      transition: .3s;
+      &:hover{
+        color: #FF3F3A;
+        transition: .3s;
+      }
+    }
+  }
+  &__title{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #1E212C;
+    margin: 24px 0 60px;
+  }
+  &__btns{
+    column-gap: 24px;
+    display: flex;
+  }
+  &__btn-white{
+    width: 148px;
+    height: 52px;
+  }
+  &__btn{
+    width: 201px;
+    height: 52px;
+  }
+  &__list{
+    margin-top: 189px;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      position: relative;
+      &:not(&:last-child)::before{
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #FF3F3A;
+        border-radius: 50%;
+        top: 50%;
+        right: -74px;
+        transform: translateY(-50%);
+      }
+    }
+    &-number{
+      font-weight: 900;
+      font-size: 46px;
+      line-height: 130%;
+      color: #1E212C;
+    }
+    &-text{
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 160%;
+      color: #1E212C;
+    }
+  }
+}

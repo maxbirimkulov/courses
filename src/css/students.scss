@@ -1,0 +1,67 @@
+.students{
+  text-align: center;
+  padding-bottom: 100px;
+  background: #F4F5F7;
+  &__content{
+    margin-top: 60px;
+    position: relative;
+  }
+  &__content-slide{
+    margin:  0 auto;
+    width: calc(100% - 210px);
+    background: #FFFFFF;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    padding: 64px 105px 64px 163px;
+    text-align: left;
+  }
+  &__content-img{
+    width: 72px;
+    height: 72px;
+  }
+  &__content-info{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+  &__content-name{
+    @include text(bold,16px,160%, $blue);
+  }
+  &__content-prof{
+    @include text(normal,14px,150%, $grey);
+    margin-top: 4px;
+  }
+  &__content-text{
+    @include text(normal,20px,150%, $grey);
+    margin-bottom: 24px;
+    position: relative;
+    &::before{
+      content: url("../images/students/braces.svg");
+      position: absolute;
+      top: 0;
+      left: -58px;
+    }
+
+  }
+  &__arrow_prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  &__arrow_next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  &__dot{
+    width: 30px!important;
+    height: 4px!important;
+    border-radius: 5px!important;
+  }
+}
+
+.owl-dots{
+  margin-top: 60px;
+}

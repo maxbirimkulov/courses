@@ -1,0 +1,12 @@
+.post {
+  padding: 120px 0 180px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__btn {
+    width: 158px;
+    height: 52px;
+  }
+}

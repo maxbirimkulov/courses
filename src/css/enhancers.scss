@@ -1,0 +1,14 @@
+
+$red : #FF3F3A;
+$blue: #1E212C;
+$grey: #424551;
+$gradient: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+
+@mixin text ($fw, $fz, $lh, $col) {
+  font-weight: $fw;
+  font-size: $fz;
+  @if $lh != 0 {
+    line-height: $lh;
+  }
+  color: $col;
+}

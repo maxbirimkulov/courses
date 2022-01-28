@@ -1,0 +1,59 @@
+@import "../libs/owl-carousel/owl.carousel.min.css";
+@import "../libs/owl-carousel/owl.theme.default.min.css";
+@import "../fonts/Lato/stylesheet.css";
+@import "enhancers";
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+}
+
+.container{
+  max-width: 1260px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1E212C;
+}
+.title{
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1E212C;
+  margin-top: 8px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  display: block;
+}
+
+
+
+@import "button";
+@import "header";
+@import "home";
+@import "createx";
+@import "courses";
+@import "benefist";
+@import "events";
+@import "certificate";
+@import "meet";
+@import "students";
+@import "post";

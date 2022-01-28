@@ -1,0 +1,78 @@
+.events{
+  padding: 80px 0;
+  background: linear-gradient(55.95deg, #FF3F3A20 0%, #F75E0520 100%);
+  text-align: center;
+  &__card{
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 40px 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    transition: .5s;
+    &:first-of-type{
+      margin-top: 60px;
+    }
+    &:hover{
+      transition: .5s;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &-left{
+      display: flex;
+      column-gap: 42px;
+    }
+    &-date{
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+    }
+    &-num{
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 130%;
+      letter-spacing: 1px;
+      color: #FF3F3A;
+
+    }
+    &-month, &-title{
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      color: #1E212C;
+      text-align: left;
+    }
+    &-time, &-subtitle{
+      margin-top: 4px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 160%;
+      color: #787A80;
+      text-align: left;
+    }
+  }
+  &__btn-white{
+    width: 136px;
+    height: 44px;
+  }
+  &__btn{
+    width: 215px;
+    height: 52px;
+  }
+  &__end{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    column-gap: 40px;
+    align-items: center;
+    &-title{
+      font-weight: bold;
+      font-size: 28px;
+      color: #1E212C;
+    }
+  }
+}

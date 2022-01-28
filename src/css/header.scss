@@ -1,0 +1,67 @@
+.header{
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  &__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left{
+    display: flex;
+    column-gap: 60px;
+  }
+  &__list{
+    display: flex;
+    column-gap: 40px;
+  }
+  &__link{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    transition: .3s;
+    &:hover{
+      color: #FF4242;
+      transition: .3s;
+    }
+  }
+  &__right{
+    display: flex;
+    column-gap: 37px;
+    align-items: center;
+  }
+  &__btn{
+    width: 207px;
+    height: 52px;
+  }
+  &__auth{
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  &__login{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    color: #424551;
+    transition: .3s;
+    &:hover{
+      color: #FF4242;
+      transition: .3s;
+    }
+  }
+  &__register{
+    color: #424551;
+    transition: .3s;
+    &:hover{
+      color: #FF4242;
+      transition: .3s;
+    }
+  }
+}

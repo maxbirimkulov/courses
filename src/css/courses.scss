@@ -1,0 +1,71 @@
+.courses{
+  padding-bottom: 180px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+  }
+  &__btn{
+    width: 203px;
+    height: 52px;
+  }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__card{
+    display: flex;
+    width: calc(50% - 15px);
+    border: 1px solid #E5E8ED;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+    &__img-link{
+      width: 30%;
+      height: 100%;
+    }
+    &-img{
+      width: 100%;
+      height: 100%;
+    }
+    &-info{
+      width: 70%;
+      padding: 32px;
+    }
+    &-type{
+      @include text(normal,14px,150%,#fff);
+      padding: 1px 8px;
+      border-radius: 4px;
+      border: none;
+      &_green{
+        background: #03CEA4;
+      }
+      &_blue{
+        background: #5A87FC;
+      }
+      &_orange{
+        background: #F89828;
+      }
+      &_red{
+        background: #F52F6E;
+      }
+    }
+    &-title{
+      @include text(bold,20px,150%,$blue);
+      margin: 21px 0 20px;
+    }
+    &-about{
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      color: #787A80;
+    }
+    &-price{
+      @include text(bold,18px,150%,#FF4242);
+    }
+    &-name{
+      @include text(normal,18px,150%,#787A80);
+    }
+  }
+}

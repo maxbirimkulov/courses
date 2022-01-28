@@ -1,0 +1,59 @@
+.benefits{
+  text-align: center;
+  padding-bottom: 140px;
+  &__list{
+    margin: 60px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      @include text(bold, 16px, 0 , #9A9CA5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 9px;
+      padding: 10px 70px;
+      transition: .3s;
+      cursor: pointer;
+      &_active{
+        color: $red;
+        border: 1px solid $red;
+        svg path{
+          fill: $red;
+        }
+      }
+      &:hover{
+        color: $red;
+        transition: .3s;
+        border: 1px solid $red;
+        svg path{
+          fill: $red;
+        }
+      }
+    }
+  }
+
+  &__content{
+    display: none;
+    justify-content: space-between;
+    &_active{
+      display: flex;
+    }
+    &-left{
+      padding-top: 102px;
+      text-align: left;
+    }
+    &-title{
+      @include text(900, 32px, 130%,#1E212C );
+      margin-bottom: 24px;
+    }
+    &-text{
+      @include text(normal, 16px, 160%,#424551);
+    }
+    &-right{
+      width: 45%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

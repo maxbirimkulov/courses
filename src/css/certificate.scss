@@ -1,0 +1,35 @@
+.certificate{
+  padding: 120px 0 120px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    @include text(bold,16px,0,$blue);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  &__subtitle{
+    @include text(900,46px,130%,$blue);
+    margin:8px 0 48px;
+  }
+  &__text{
+    @include text(normal,16px, 160%, $grey);
+    margin-bottom: 40px;
+  }
+  &__icons{
+    display: flex;
+    column-gap: 20px ;
+    img{
+      width: 33.333333%;
+    }
+  }
+  &__left{
+    width: 62%;
+    position: relative;
+    img{
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
